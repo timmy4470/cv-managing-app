@@ -1,0 +1,15 @@
+html {
+  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.bg {
+padding-top: 40px;
+
+}
+
+

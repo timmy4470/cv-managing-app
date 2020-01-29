@@ -1,0 +1,15 @@
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+html {
+    height: 100%;
+}
+button {
+    margin: 0 auto;
+}
+
+.wrapper {
+    text-align: center;
+}

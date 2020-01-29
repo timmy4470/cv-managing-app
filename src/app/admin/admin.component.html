@@ -1,0 +1,55 @@
+<ng-container *ngIf="cv_details | async as cv_detail">
+	<div *ngFor="let cv of cv_detail">
+<div class="p-5 mt-1 col-md-7 col-md-offset-4">
+	<h5>Update Your CV </h5>
+    <form #cv_form = "ngForm" (ngSubmit)="onSubmit(cv_form)">
+
+	<div class="form-group"> 
+		<label for="full_name_id" class="control-label"></label>
+		<img src="">
+	</div>	
+	<div class="form-group"> 
+		<label for="full_name_id"  class="control-label">Full Name</label>
+		<input type="text" required ngModel={{cv.fields.nameFamily}} class="form-control" id="full_name_id" name="full_name"   value={{cv.fields.nameFamily}}>
+	</div>	
+	<div class="form-group">
+		<label for="address" class="control-label">Address </label>
+		<input type="text" ngModel={{cv.fields.address}} class="form-control" id="address_id" name="address"  value={{cv.fields.address}}>
+	</div>					
+							
+	<div class="form-group">
+		<label for="email" class="control-label">Email</label>
+		<input type="text" ngModel={{cv.fields.email}} class="form-control" id="email_id" name="email"  value={{cv.fields.email}}>
+	</div>	
+
+	<div class="form-group"> 
+		<label for="thesis" class="control-label">Thesis Title</label>
+		<input type="text" ngModel={{cv.fields.thesis}} class="form-control" id="thesis_id" name="thesis" value={{cv.fields.thesis}}>
+	</div>									
+							
+	<div class="form-group">
+		<label for="introduction" class="control-label">Introduction</label>
+		<input type="text" ngModel={{cv.fields.introduction}} class="form-control" id="intro_id" name="intro" value={{cv.fields.introduction}}>
+	</div>	
+	<div class="form-group"> 
+		<label for="job" class="control-label">Jop Applied For</label>
+		<input type="text" ngModel={{cv.fields.job}} class="form-control" id="job_id" name="job"  value={{cv.fields.applicationTarget}}>
+	</div>	
+	<div class="form-group"> 
+		<label for="education" class="control-label">Education Place</label>
+		<input type="text" ngModel={{cv.fields.education}} class="form-control" id="edu_id" name="education" value={{cv.fields.education}}>
+	</div>		
+	<div class="form-group"> 
+		<label for="experience" class="control-label">Work Experience</label>
+		<input type="text" ngModel={{cv.fields.jobTitleAndWorkExperience}} class="form-control" id="experience_id" name="experience" value={{cv.fields.jobTitleAndWorkExperience}}>
+	</div>	
+	
+	
+	<div class="form-group"> 
+		<button type="submit" class="btn btn-block btn-outline-warning waves-effect"  >Update Your CV</button>
+	</div>     
+	
+</form>		
+</div>	
+</div>
+</ng-container>

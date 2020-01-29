@@ -1,0 +1,34 @@
+<ng-container *ngIf="cv_details | async as cv_detail">
+<div class="main" *ngFor="let cv of cv_detail">
+    <div id="template" class="col-md-8 col-md-offset-4 p-5 my-5" >
+
+        <div class="cv_img  p-5">
+            <img width="160px" height="160px" src="https://images.ctfassets.net/xcr56rhm8y6p/6U3907yBTjtEU0QeDaMj5p/7a4aaa75a003e2f5ff019e656b5d48b3/profile.jpg" alt="" srcset="">
+        </div>
+        <div class="template_top">
+            <h5>Full Name</h5>
+            <p>{{ cv.fields.nameFamily}}</p><br>{{cv.fields.photo}}
+            <h5>Address</h5>
+                <address>{{ cv.fields.address}}</address>
+            <br>
+            <h5>Email</h5>
+            <p>{{ cv.fields.email}}</p>
+            <hr>
+            <h5>Introduction</h5>
+            <p>{{ cv.fields.introduction}}</p>
+            <hr>
+            <h5>Thesis Title</h5>
+            <p>{{ cv.fields.thesis}}</p>
+            <h5>Desired Job</h5>
+            <p>{{ cv.fields.thesisTitle}}</p>
+            
+
+            <h5>Education</h5>
+            <p>{{ cv.fields.education}}</p>
+
+            <h5>Job title and work experience</h5>
+            <p>{{ cv.fields.jobTitleAndWorkExperience }}</p>
+        </div>
+</div>
+</div>
+</ng-container>

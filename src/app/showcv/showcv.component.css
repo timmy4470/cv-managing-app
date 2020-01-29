@@ -1,0 +1,12 @@
+#template {
+    width: 800px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding-top: 45px;
+    border: 5px solid #ffbb33;
+  
+}
+.main {
+    padding-bottom: 50px;
+    padding-top: 20px;
+}

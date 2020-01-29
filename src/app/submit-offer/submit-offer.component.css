@@ -1,0 +1,27 @@
+form {
+   padding-top: 10px;
+}
+label {
+    color: white;
+}
+.desc{
+    float: right;
+    color: #ffbb33;
+    position: relative;
+    top: 15px;
+    right: 10px;
+}
+body{
+    height: 100 vh;
+}
+
+p{
+    padding-bottom: 8px;
+    color: white;
+}
+
+
+
+h5{
+    color: #ffdd99
+}
