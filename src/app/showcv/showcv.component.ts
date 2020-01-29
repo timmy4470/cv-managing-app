@@ -15,7 +15,7 @@ export class ShowcvComponent implements OnInit {
 
   ngOnInit() {
   this.contentful.getCv().then(cv_details => this.cv_details = cv_details);
- console.log(this.contentful.getCv());
+
 }
 
    

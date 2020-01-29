@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
  
   ngOnInit() {
     this.login = this.contentful.getContent('7qno0b7EFaPxb09Hgjj2HH');
-    console.log(this.contentful.getLoginText());
+
   }
 
 }
