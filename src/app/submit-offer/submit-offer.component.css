@@ -1,5 +1,5 @@
 form {
-   padding-top: 10px;
+   padding-top: 80px;
 }
 label {
     color: white;
@@ -24,4 +24,7 @@ p{
 
 h5{
     color: #ffdd99
+}
+.main_offer_submit {
+    height: 100vh;
 }

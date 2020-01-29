@@ -10,11 +10,11 @@ import { Entry } from 'contentful';
   styleUrls: ['./showcv.component.css']
 })
 export class ShowcvComponent implements OnInit {
-  cv_details:  Observable<any>;
+  cv_details:  Entry<any>[] = [];
   constructor(private contentful: ContentfulService) {}
 
   ngOnInit() {
-  this.cv_details = this.contentful.getCv();
+  this.contentful.getCv().then(cv_details => this.cv_details = cv_details);
  console.log(this.contentful.getCv());
 }
 

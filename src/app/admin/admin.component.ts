@@ -12,11 +12,11 @@ import {NgForm} from '@angular/forms';
 })
 export class AdminComponent implements OnInit {
   
-  cv_details:  Observable<any>;
+  cv_details:  Entry<any>[] = [];
   constructor(private contentful: ContentfulService) {}
   ngOnInit() {
    
-    this.cv_details = this.contentful.getCv();
+     this.contentful.getCv() .then(cv_details => this.cv_details = cv_details);
   }
   onSubmit(cv_form: NgForm) {
     console.log(cv_form.value);

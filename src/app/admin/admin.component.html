@@ -1,5 +1,5 @@
-<ng-container *ngIf="cv_details | async as cv_detail">
-	<div *ngFor="let cv of cv_detail">
+<ng-container *ngIf="cv_details">
+	<div *ngFor="let cv of cv_details">
 <div class="p-5 mt-1 col-md-7 col-md-offset-4">
 	<h5>Update Your CV </h5>
     <form #cv_form = "ngForm" (ngSubmit)="onSubmit(cv_form)">

@@ -13,3 +13,7 @@ button {
 .wrapper {
     text-align: center;
 }
+
+.main_home {
+    height: 100vh;
+}
