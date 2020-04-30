@@ -23,7 +23,7 @@
     "contentful": "^7.13.1",
     "contentful-management": "^5.12.0",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "marked": "^0.8.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
